@@ -2,7 +2,7 @@
 
 import React, {useState} from "react";
 import Link from "next/link";
-import {GraduationCap, Users, User, ShieldCheck, BookOpen, Trophy, Clock, ArrowRight, Menu, X, CheckCircle2, MapPin, Phone, Mail} from "lucide-react";
+import {GraduationCap, Users, User, BookOpen, Trophy, ArrowRight, Menu, X, CheckCircle2, MapPin, Phone, Mail} from "lucide-react";
 
 export default function LandingPage() {
 	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -116,7 +116,7 @@ export default function LandingPage() {
 					</div>
 					<h1 className="text-5xl md:text-7xl font-extrabold text-gray-900 leading-tight mb-6">
 						Mewujudkan Generasi <br />
-						<span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-emerald-500">Maju & Berteknologi</span>
+						<span className="text-transparent bg-clip-text bg-linear-to-r from-indigo-600 to-emerald-500">Maju & Berteknologi</span>
 					</h1>
 					{/* <p className="text-lg md:text-xl text-gray-500 max-w-2xl mx-auto mb-10 leading-relaxed">Mecca School mengintegrasikan kurikulum Islam terpadu dengan teknologi modern untuk mencetak pemimpin masa depan yang berakhlak mulia dan kompeten.</p> */}
 					<div className="flex flex-col sm:flex-row justify-center gap-4">
@@ -183,9 +183,9 @@ export default function LandingPage() {
 					<div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 						<div className="relative">
 							<div className="absolute -top-4 -left-4 w-24 h-24 bg-dots-pattern opacity-20"></div>
-							<div className="bg-gray-100 rounded-3xl h-[500px] w-full flex items-center justify-center overflow-hidden relative shadow-2xl">
+							<div className="bg-gray-100 rounded-3xl h-125 w-full flex items-center justify-center overflow-hidden relative shadow-2xl">
 								{/* Placeholder Image */}
-								<div className="absolute inset-0 bg-gradient-to-tr from-indigo-500 to-purple-600 opacity-90"></div>
+								<div className="absolute inset-0 bg-linear-to-tr from-indigo-500 to-purple-600 opacity-90"></div>
 								<BookOpen className="w-32 h-32 text-white/20 relative z-10" />
 								<p className="absolute bottom-8 left-8 text-white font-bold text-2xl max-w-xs z-10">&quot;Pendidikan adalah senjata paling mematikan untuk mengubah dunia.&quot;</p>
 							</div>
