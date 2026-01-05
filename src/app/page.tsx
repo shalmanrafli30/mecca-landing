@@ -3,6 +3,7 @@
 import React, {useState} from "react";
 import Link from "next/link";
 import {GraduationCap, Users, User, BookOpen, Trophy, ArrowRight, Menu, X, CheckCircle2, MapPin, Phone, Mail} from "lucide-react";
+import {FaInstagram, FaYoutube, FaFacebook} from "react-icons/fa";
 
 export default function LandingPage() {
 	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -15,7 +16,7 @@ export default function LandingPage() {
 			description: "Akses jadwal, nilai, dan materi pembelajaran.",
 			icon: User,
 			href: "https://student.meccaschool.online",
-			color: "bg-blue-50 text-blue-600 hover:border-blue-200",
+			color: "bg-blue-600 text-white hover:border-blue-200",
 			btnColor: "bg-blue-600 hover:bg-blue-700"
 		},
 		{
@@ -24,8 +25,8 @@ export default function LandingPage() {
 			description: "Kelola kelas, absensi, dan penilaian siswa.",
 			icon: GraduationCap,
 			href: "https://teacher.meccaschool.online",
-			color: "bg-purple-50 text-purple-600 hover:border-purple-200",
-			btnColor: "bg-purple-600 hover:bg-purple-700"
+			color: "bg-blue-100 text-blue-700 hover:border-blue-200",
+			btnColor: "bg-blue-700 hover:bg-blue-800"
 		},
 		{
 			name: "Portal Orang Tua",
@@ -102,7 +103,7 @@ export default function LandingPage() {
 			</nav>
 
 			{/* --- HERO SECTION --- */}
-			<section id="beranda" className="pt-32 pb-20 lg:pt-48 lg:pb-32 px-4 relative overflow-hidden">
+			<section id="beranda" className="pt-28 pb-20 lg:pt-32 lg:pb-32 px-4 relative overflow-hidden">
 				<div className="absolute top-0 right-0 -z-10 opacity-10">
 					<div className="w-96 h-96 bg-indigo-500 rounded-full filter blur-3xl translate-x-1/2 -translate-y-1/2"></div>
 				</div>
@@ -218,7 +219,7 @@ export default function LandingPage() {
 			</section>
 
 			{/* --- FOOTER --- */}
-			<footer id="kontak" className="bg-slate-900 text-slate-300 py-16 border-t border-slate-800">
+			<footer id="kontak" className="bg-slate-900 text-slate-300 py-10 border-t border-slate-800">
 				<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 					<div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
 						<div className="col-span-1 md:col-span-2">
@@ -231,9 +232,15 @@ export default function LandingPage() {
 							<p className="text-sm leading-relaxed max-w-sm mb-6 text-slate-400">Lembaga pendidikan unggulan yang berfokus pada pembentukan karakter islami dan prestasi akademik siswa untuk masa depan yang gemilang.</p>
 							<div className="flex gap-4">
 								{/* Social Icons Placeholder */}
-								<div className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-indigo-600 transition cursor-pointer">FB</div>
-								<div className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-indigo-600 transition cursor-pointer">IG</div>
-								<div className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-indigo-600 transition cursor-pointer">YT</div>
+								<div className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-indigo-600 transition cursor-pointer text-lg">
+									<FaYoutube />
+								</div>
+								<div className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-indigo-600 transition cursor-pointer text-lg">
+									<FaInstagram />
+								</div>
+								<div className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-indigo-600 transition cursor-pointer text-lg">
+									<FaFacebook />
+								</div>
 							</div>
 						</div>
 
